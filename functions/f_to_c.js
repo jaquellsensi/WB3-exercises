@@ -1,7 +1,11 @@
 function convertFahrenheitToCelsius(fahrenheit) {
-    return (fahrenheit - 32) * 5 / 9;
+    let celsius = (fahrenheit - 32) * 5 / 9;
+    return celsius;
 }
 
-function convertCelsiusToFahrenheit(celsius) {
-    return celsius * 9 / 5 + 32;
+let  fahrenheit = [212, 90, 72, 32, 0, -40];
+
+for (let i = 0; i < fahrenheit.length; i++) {
+    let celsius = parseInt(convertFahrenheitToCelsius(fahrenheit[i]));
+    console.log(celsius);
 }
